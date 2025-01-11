@@ -33,13 +33,13 @@ class Settings(BaseSettings):
     POSTGRES_URL: str = f"postgresql+asyncpg://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
     
     # Database Pool Settings
-    DB_POOL_SIZE: int = os.getenv("DB_POOL_SIZE", 5)
-    DB_MAX_OVERFLOW: int = os.getenv("DB_MAX_OVERFLOW", 10)
-    DB_ECHO: bool = os.getenv("DB_ECHO", True)
+    DB_POOL_SIZE = os.getenv("DB_POOL_SIZE", 5)
+    DB_MAX_OVERFLOW = os.getenv("DB_MAX_OVERFLOW", 10)
+    DB_ECHO = os.getenv("DB_ECHO", True)
     
     # Redis
     REDIS_HOST: str = os.getenv("REDIS_HOST", "localhost")
-    REDIS_PORT: int = os.getenv("REDIS_PORT", 6379)
+    REDIS_PORT = os.getenv("REDIS_PORT", 6379)
     
     # Debug mode
     DEBUG: bool = bool(os.getenv("DEBUG", False))
