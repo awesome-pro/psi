@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# C
+*.o
+
+# PyInstaller
+#  Usually these files are created by a pyinstaller build. This is safe to ignore.
+*.manifest
+
+# Celery
+celerybeat-schedule-wal
+celerybeat-schedule
+
+# Virtual Environment
+venv/
+.venv/
+.env
+
+# Logs
+*.log
+
+# IDEs
+.idea/
+*.sublime-*
